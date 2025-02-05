@@ -5,12 +5,13 @@
 using namespace std;
 
 void countdown(int seconds) {
+    cout << "Countdown starting now!" << endl;
     while (seconds > 0) {
         cout << "Time remaining: " << seconds << " seconds" << endl;
-        this_thread::sleep_for(chrono::seconds(1)); // Wait for 1 second
+        this_thread::sleep_for(chrono::seconds(1)); 
         seconds--;
     }
-    cout << "Time's up!" << endl;
+    cout << "Time's up! Good job!" << endl;  
 }
 
 int main() {
